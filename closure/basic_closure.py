@@ -1,5 +1,6 @@
 # Closures
 
+
 def outer_func(msg):
     message = msg
 
@@ -7,6 +8,7 @@ def outer_func(msg):
         print(message)
 
     return inner_func
+
 
 hi_func = outer_func('Hi')
 hello_func = outer_func('Hello')
