@@ -21,8 +21,9 @@ class Dog:
 
     def __add__(self, otherDog):
         return Dog('Puppy of {} and {}'.format(self.name, otherDog.name),
-                    self.month, self.day, self.year,
-                    self.speakText + otherDog.speakText)
+                   self.month, self.day, self.year,
+                   self.speakText + otherDog.speakText)
+
 
 def main():
     boyDog = Dog('Mesa', 5, 15, 2004, 'WOOOOF')
@@ -42,6 +43,7 @@ def main():
     print(puppy.speak())
     print(puppy.getName())
     print(puppy.birthDate())
+
 
 if __name__ == '__main__':
     main()

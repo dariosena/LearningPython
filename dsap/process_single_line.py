@@ -1,5 +1,6 @@
 import turtle
 
+
 def main():
     # This line reads a line of input from the user
     filename = input('Please enter drawing filename: ')
@@ -65,6 +66,7 @@ def main():
     # until the mouse is clicked.
     screen.exitonclick()
     print('Program Execution Completed.')
+
 
 if __name__ == '__main__':
     main()
