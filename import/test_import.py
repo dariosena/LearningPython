@@ -1,6 +1,7 @@
 
 # AttributeError: module 'no_package' has no attribute 'demoprint'
 from string import pack
+
 #
 pack.demoprint()
 

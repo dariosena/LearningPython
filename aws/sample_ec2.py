@@ -1,11 +1,13 @@
 
 import sys
+
 import boto3
-from logall import config_logging
 from botocore.exceptions import ClientError
+from logall import config_logging
 
 # Configuring and getting a logger object
 logger = config_logging()
+
 
 def main():
 
@@ -54,8 +56,10 @@ def main():
 
     logger.info('Response %s', response)
 
+
 def simple_log(response):
     logger.info('Response %s', response)
+
 
 if __name__ == '__main__':
     main()

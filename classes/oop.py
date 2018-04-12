@@ -29,6 +29,7 @@ class Employee:
         first, last, pay = emp_str.split('-')
         return cls(first, last, pay)
 
+
 emp1 = Employee('Corey', 'Schafer', 50000)
 emp2 = Employee('Test', 'User', 60000)
 
@@ -53,6 +54,6 @@ Employee.set_raise_amount(1.06)
 #emp2.raise_amount = 1.06
 print(emp2.raise_amount)
 
-#print(Employee.__dict__)
+# print(Employee.__dict__)
 
 print(Employee.num_of_emps)

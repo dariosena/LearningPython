@@ -1,8 +1,7 @@
 class Robot:
 
-    def __init__(self, name = None):
+    def __init__(self, name=None):
         self.name = name
-
 
     def say_hi(self):
         if self.name:
@@ -15,6 +14,7 @@ class Robot:
 
     def get_name(self):
         return self.name
+
 
 x = Robot()
 x.set_name("fayaz")

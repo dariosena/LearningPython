@@ -10,16 +10,16 @@ tcpCliSock.connect(ADDR)
 
 while True:
     data = input('> ')
-    
+
     if not data:
         break
-        
+
     tcpCliSock.send(data.encode('utf-8'))
     data = tcpCliSock.recv(BUFSIZ)
-    
+
     if not data:
         break
-        
+
     print(data.decode('utf-8'))
-    
+
 tcpCliSock.close()

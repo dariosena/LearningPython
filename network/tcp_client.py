@@ -1,5 +1,6 @@
 import socket
 
+
 def main():
     host = '127.0.0.1'
     port = 5001
@@ -16,6 +17,7 @@ def main():
         message = input('-> ')
 
     s.close()
+
 
 if __name__ == '__main__':
     main()

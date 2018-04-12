@@ -1,9 +1,10 @@
 import sys
 
-sys.path.append('../my_modules')
-
 # import my_module as mm
 from my_module import find_index, test
+
+sys.path.append('../my_modules')
+
 # from my_module import *
 
 courses = ['History', 'Math', 'Physics', 'CompSci']

@@ -1,5 +1,6 @@
 import socket
 
+
 def main():
     host = '127.0.0.1'
     port = 5001
@@ -25,6 +26,7 @@ def main():
         c.send(data.encode('utf-8'))
 
     c.close()
+
 
 if __name__ == '__main__':
     main()

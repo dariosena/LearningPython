@@ -1,5 +1,6 @@
 
 import logging
+
 import employee
 
 logger = logging.getLogger(__name__)
@@ -16,17 +17,21 @@ stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 
+
 def add(num1, num2):
     """Add Function"""
     return num1 + num2
+
 
 def subtract(num1, num2):
     """Subtract Function"""
     return num1 - num2
 
+
 def multiply(num1, num2):
     """Multiply Function"""
     return num1 * num2
+
 
 def divide(num1, num2):
     """Divide Function"""
@@ -36,6 +41,7 @@ def divide(num1, num2):
         logger.exception('Tried to divide by zero.')
     else:
         return result
+
 
 num_1 = 10
 num_2 = 5

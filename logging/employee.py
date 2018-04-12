@@ -10,6 +10,7 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
 
+
 class Employee:
     """A sample Employee Class"""
 
@@ -17,7 +18,8 @@ class Employee:
         self.first = first
         self.last = last
 
-        logger.info('Created Employee: {} - {}.'.format(self.fullname, self.email))
+        logger.info(
+            'Created Employee: {} - {}.'.format(self.fullname, self.email))
 
     @property
     def email(self):
