@@ -1,8 +1,12 @@
 from socket import *
 from time import ctime
 
+"""
+Timestamp TCP Server
+"""
+
 HOST = ''
-PORT = 21564
+PORT = 21568
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
 
@@ -13,7 +17,7 @@ tcpSerSock.listen(5)
 while True:
     print('waiting for connection ...')
     tcpCliSock, addr = tcpSerSock.accept()
-    print('... connected from: '.format(addr))
+    print('... connected from: {0}'.format(addr))
 
     while True:
         data = tcpCliSock.recv(BUFSIZ)

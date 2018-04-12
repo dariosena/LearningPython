@@ -1,15 +1,15 @@
 from socket import *
 
 """
-Timestamp TCP Client
+Timestamp TCP Client with IPv6
 """
 
-HOST = 'localhost'
-PORT = 21568
+HOST = '::1'
+PORT = 21564
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
 
-tcpCliSock = socket(AF_INET, SOCK_STREAM)
+tcpCliSock = socket(AF_INET6, SOCK_STREAM)
 tcpCliSock.connect(ADDR)
 
 while True:
