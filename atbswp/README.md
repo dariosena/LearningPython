@@ -1,2 +1,2 @@
-Book: AutomAte the Boring Stuff with Python
+Book: Automate the Boring Stuff with Python
 ==========================================
