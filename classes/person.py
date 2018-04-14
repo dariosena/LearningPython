@@ -12,12 +12,16 @@ class Person:
         self.email = email
 
     def age(self):
+        if hasattr(self, "_age"):
+            return self._age
+
         today = datetime.date.today()
         age = today.year - self.birthdate.year
 
         if today < datetime.date(today.year, self.birthdate.month, self.birthdate.day):
             age -= 1
 
+        self._age = age
         return age
 
 
