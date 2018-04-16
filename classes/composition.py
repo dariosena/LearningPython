@@ -1,5 +1,7 @@
 
+
 class Student:
+
     def __init__(self, name, student_number):
         self.name = name
         self.student_number = student_number
@@ -11,22 +13,24 @@ class Student:
 
 
 class Departament:
+
     def __init__(self, name, departament_code):
         self.name = name
         self.departament_code = departament_code
         self.courses = {}
 
-    def add_course(self, description, course_code, credits):
+    def add_course(self, description, course_code, creds):
         self.courses[course_code] = Course(
-            description, course_code, credits, self)
+            description, course_code, creds, self)
         return self.courses[course_code]
 
 
 class Course:
-    def __init__(self, description, course_code, credits, departament):
+
+    def __init__(self, description, course_code, creds, departament):
         self.description = description
         self.course_code = course_code
-        self.credits = credits
+        self.credits = creds
         self.departament = departament
         self.departament.add_course(self)
 
@@ -38,6 +42,7 @@ class Course:
 
 
 class CourseRunning:
+
     def __init__(self, course, year):
         self.course = course
         self.year = year
