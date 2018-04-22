@@ -1,2 +1,2 @@
-# LearningPython
+# Python
 Learning Python 3
