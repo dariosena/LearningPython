@@ -12,6 +12,8 @@ seaborn = "*"
 ipython = "*"
 scikit-learn = "*"
 pandas = "*"
+django = "*"
+pymongo = "*"
 
 [dev-packages]
 
