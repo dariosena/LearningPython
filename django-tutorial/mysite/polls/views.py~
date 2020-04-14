@@ -6,7 +6,7 @@ from .models import Question
 
 
 class AboutView(TemplateView):
-    template_name = 'polls/about2.html'
+
 
 
 def index(request):
