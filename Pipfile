@@ -18,6 +18,9 @@ pytest = "*"
 pytest-django = "*"
 pytest-cov = "*"
 mixer = "*"
+psycopg2 = "*"
+python-language-server = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 
